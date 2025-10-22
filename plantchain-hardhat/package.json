@@ -1,0 +1,33 @@
+{
+  "name": "plantchain-hardhat",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf artifacts cache",
+    "build": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:localhost": "hardhat deploy --network localhost",
+    "deploy:sepolia": "hardhat deploy --network sepolia"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.6",
+    "@nomicfoundation/hardhat-ethers": "^3.0.6",
+    "@nomicfoundation/hardhat-verify": "^2.0.9",
+    "chai": "^4.3.10",
+    "hardhat": "^2.22.15",
+    "hardhat-deploy": "^0.12.4",
+    "hardhat-gas-reporter": "^1.0.10",
+    "rimraf": "^6.0.1",
+    "solidity-coverage": "^0.8.12",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@fhevm/solidity": "^0.8.0",
+    "@openzeppelin/contracts": "^5.0.2",
+    "@zama-fhe/oracle-solidity": "^0.1.0",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.4"
+  }
+}
