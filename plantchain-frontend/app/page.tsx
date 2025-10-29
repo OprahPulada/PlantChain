@@ -132,7 +132,7 @@ export default function HomePage() {
           <div
             key={plant.id}
             className="plant-card"
-            onClick={() => router.push(`/plant/${plant.id}`)}
+            onClick={() => router.push(`/p?id=${plant.id}`)}
           >
             <img
               src={plant.imageCID ? getIpfsUrl(plant.imageCID) : "/placeholder-plant.jpg"}
